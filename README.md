@@ -21,6 +21,16 @@ A Discord Bot which will show the real-time status of Dyno
 8) Give the bot `Send Messages` and `Embed Links` **IMPORTANT!**, the rest of the permissions are optional
 9) Copy the URL, then invite the bot to your desired server
 
+## About the bot
+ - dyno-status serves as an easy way to check the real time status of the public version of Dyno, instead of having to visit their [status page](https://dyno.gg/status)
+ - Every 20 seconds, dyno-status will send an API request to the status page, fetching the most recent information available. After the information has been received, dyno-status will translate the information relayed into an embed which looks something like this: ![Status example](https://cdn.discordapp.com/attachments/556405294159101963/601782347594989588/unknown.png)
+ - An API request is sent every 20 seconds and the latest information is update every 15 seconds. So when a status update is fetched, you will see the uptime jump 15 seconds each refresh rather than 20 seconds. This is not something to worry about
+ ### Why did I decide to create this?
+ - I wanted a way of easily accessing the real time connection status of Dyno with Discord, and the best way is to check the platform you're using, Discord
+ - Doing support, if someone reports an offline server, it takes time to grab their server ID, load the status page and verify what cluster/shard the server is on. Having a bot which has the latest information for you makes this so much more easier
+ - I wanted to get myself involved in more JavaScript
+ - I was bored. No joke. I had nothing to do.
+
 ## Disclaimer
 
  - Although I am a Trusted member of Dyno, Dyno has no affiliation or relation with this project in any way. This was my own personal project, and I may remove this repository at the developer's request.

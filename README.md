@@ -11,7 +11,7 @@ A Discord Bot which will show the real-time status of Dyno
 6) Start the bot
 
 ### Creating a bot account
-1) Head to to [Discord Developer Portal](https://discordapp.com/developers/applications/)
+1) Head to the [Discord Developer Portal](https://discordapp.com/developers/applications/)
 2) Press New Application, call it whatever you want to name your bot
 3) Head to the Bot tab, Add Bot
 4) Copy the bot token - **__DO NOT SHARE THIS WITH ANYONE__**

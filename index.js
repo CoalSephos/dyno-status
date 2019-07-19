@@ -73,7 +73,7 @@ async function req(){
         let color;
         if(overallPercentage >= 80) color = 124622
         else if(overallPercentage >= 50) color = 16751360
-        else if(percentage < 50) color = 16728395
+        else if(overallPercentage < 50) color = 16728395
         else color = undefiend
         const Overview = {
             content:'',

@@ -1,0 +1,35 @@
+{
+  "name": "dyno-status",
+  "version": "0.0.1",
+  "description": "A Discord Bot which will show the real-time status of Dyno",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsian03/dyno-status.git"
+  },
+  "keywords": [
+    "dyno",
+    "discord",
+    "status"
+  ],
+  "author": "bsian03 (https://github.com/bsian03)",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/bsian03/dyno-status/blob/master/LICENSE"
+    }
+  ],
+  "homepage": "https://github.com/bsian03/dyno-status",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "eris": "^0.10.1"
+  },
+  "bugs": {
+    "url": "https://github.com/bsian03/dyno-status/issues"
+  },
+  "devDependencies": {},
+  "license": "ISC"
+}

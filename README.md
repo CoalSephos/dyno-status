@@ -5,7 +5,7 @@ A Discord Bot which will show the real-time status of Dyno
 
 1) Clone the repository
 2) Node 10 is required, so head to the [Node.js download page](https://nodejs.org/en/) and download/install the LTS version
-3) Run `npm install` to install the dependencies (Eris and Axios)
+3) Run `npm install` to install the dependencies (Eris, Axios and mathjs)
 4) Create a new bot application (see [Creating a bot account](#creating-a-bot-account))
 5) Open `config.json` and set your desired channel ID for the status to go to
 6) Start the bot

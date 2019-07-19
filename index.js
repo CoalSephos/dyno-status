@@ -145,4 +145,6 @@ client.on('ready',()=>{
     else run()
 })
 
+// You can do other stuff here
+
 client.connect()

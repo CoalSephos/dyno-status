@@ -34,7 +34,7 @@ function formatter(name, server){
     const clusterProblems = `${clusterOutageCount}/24 clusters with an outage`
     const partialOutage = `${clusterOutage.filter(b => b.result.connectedCount > 3).length}/${clusterOutageCount} Partial Outage`
     const majorOutage = `${clusterOutage.filter(b => !b.result && b.result.connectedCount < 4).length}/${clusterOutageCount} Major Outage`
-    const percentage = eval(shardsConnected).toFixed(4)*100 // ew, eval
+    const percentage = Number(shardsConnected).toFixed(4)*100
     shardsConnected = shardsConnected+' shards connected'
     const serverGuildCount = server.filter(s => s.result).map(a => a.result.guildCount).reduce((a,b) => a+b,0)
     const serverUnavailableCount = server.filter(s => s.result).map(a => a.result.unavailableCount).reduce((a,b) => a+b,0)
@@ -65,7 +65,7 @@ async function req(){
         }
         let shardsConnected = `${servers.map(a => a.status.filter(s => s.result).map(b => b.result.connectedCount).reduce((a,b) => a+b,0)).reduce((a,b) => a+b,0)}/864`
         const clusterProblems = `${servers.map(a => a.status.filter(s => s.result).filter(b => b.result.shardCount !== b.result.connectedCount).length).reduce((a,b) => a+b,0)}/144 clusters with problems`
-        const overallPercentage = eval(shardsConnected).toFixed(4)*100
+        const overallPercentage = Number(shardsConnected).toFixed(4)*100
         shardsConnected = shardsConnected+' shards connected'
         const totalGuilds = servers.map(s => s.status.map(a => a.result.guildCount).reduce((a,b) => a+b,0)).reduce((a,b) => a+b,0)
         const unavailableGuilds = servers.map(s => s.status.map(a => a.result.unavailableCount).reduce((a,b) => a+b,0)).reduce((a,b) => a+b,0)
